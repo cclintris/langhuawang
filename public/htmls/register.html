@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <title>myWeb 前端开发 myWeb register</title>
+        <link rel="stylesheet" href="../stylesheets/register.css">
+    </head>
+    <body>
+        <div id="registerDIV">
+            <div class="pin-leftup"></div>
+            <div class="pin-rightup"></div>
+            <div class="pin-leftbottom"></div>
+            <div class="pin-rightbottom"></div>
+            <form action="http://localhost:30010/register" id="register-form">
+                <h1 style="text-align: center;">欢迎注册 !</h1>
+                <p>用户名称 : <input id="username" type="text" autofocus required name="username"></p>
+                <p>用户密码 : <input id="password" type="password" required name="password"></p>
+                <p>确认密码 : <input id="checkPassword" type="password" required></p>
+                <p>
+                    用户类型 :
+                    <select name="type" id="userType" required>
+                        <option value="0">请选择</option>
+                        <option value="1">普通用户</option>
+                        <option value="2">VIP用户</option>
+                    </select>
+                </p>
+                <div class="sexDIV">
+                    用户性别 :
+                    <input name="userSex" value="boy" type="radio">男
+                    <input name="userSex" value="girl" type="radio">女
+                    <input name="userSex" value="others" type="radio">其他
+                </div>
+                <p>
+                    生日 :
+                    <input name="birth" id="userDate" type="date" required>
+                </p>
+                <p>
+                    邮箱 :
+                    <input id="email" type="email"  name="email"
+                    style="width: 75%;" 
+                    required>
+                </p>
+                <div style="text-align: center;margin-top: 30px;">
+                    <button type="submit"
+                            value="login up" 
+                            style="background-color: yellowgreen;" 
+                            onclick="md5_encode()">
+                            注册
+                    </button>
+                    <button type="reset" value="reset" style="background-color: gainsboro;">重置</button>
+                </div>
+            </form>
+        </div>
+        <script type="text/javascript" src="../javascripts/register.js"></script>
+        <script src="https://cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.js"></script>
+    </body>
+</html>

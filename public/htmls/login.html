@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>myWeb 前端开发 myWeb login</title>
+        <link rel="stylesheet" href="../stylesheets/login.css">
+    </head>
+    <body>
+        <div id="loginDiv">
+            <div class="pin-leftup"></div>
+            <div class="pin-rightup"></div>
+            <div class="pin-leftbottom"></div>
+            <div class="pin-rightbottom"></div>
+            <form action="http://localhost:30010/login" id="login-form">
+                <h1 style="text-align: center;">欢迎登陆 !</h1>
+                <p>用户名称 : <input id="username" type="text" required name="username"></p> 
+                <p>用户密码 : <input id="password" type="password" required name="password"></p>
+                <div class="login-btn">
+                    <a href="">
+                        <button type="submit" value="login up" onclick="md5_encode()">登陆</button>
+                    </a>
+                </div>
+                <div class="havent">
+                    <a href="http://localhost:30010/htmls/register.html">
+                        <span>尚未注册？</span>
+                    </a>
+                </div>
+            </form>
+        </div>
+        <script type="text/javascript" src="../javascripts/login.js"></script>
+        <script src="https://cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.js"></script>
+    </body>
+</html>

@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+ }
+ 
+ body {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     height: 100%;
+     background: url(https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=3227854537,2057324444&fm=26&gp=0.jpg);
+     background-repeat: no-repeat;
+     background-size: 100% 100%;
+     -moz-background-size: 100% 100%;
+ }
+ 
+ #registerDIV {
+     width: 37%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 550px;
+     background-image: linear-gradient(powderblue, skyblue);
+     color: black;
+     box-shadow: 7px 7px 17px rgba(52, 56, 66, 0.5);
+     border-radius: 5px;
+     position: relative;
+ }
+ 
+ p {
+     margin-top: 30px;
+     margin-left: 20px;
+ }
+ 
+ input {
+     margin-left: 15px;
+     border-radius: 5px;
+     border-style: hidden;
+     height: 30px;
+     width: 140px;
+     background-color: aliceblue;
+     padding-left: 10px;
+ }
+ 
+ select {
+     margin-left: 15px;
+     border-radius: 5px;
+     border-style: hidden;
+     height: 30px;
+     width: 140px;
+     background-color: aliceblue;
+     outline: none;
+     padding-left: 10px;
+ }
+ 
+ .sexDIV {
+     margin-top: 30px;
+     margin-left: 20px;
+ }
+ 
+ .sexDIV>input {
+     width: 30px;
+     height: 17px;
+ }
+ 
+ button {
+     border-color: cornsilk;
+     color: black;
+     border-style: hidden;
+     border-radius: 5px;
+     width: 100px;
+     height: 31px;
+     font-size: 16px;
+     cursor: pointer;
+     margin-left: 10px;
+ }
+ 
+ .pin-leftup {
+     height: 8px;
+     width: 8px;
+     border-radius: 50%;
+     background-color: gray;
+     position: absolute;
+     left: 3px;
+     top: 3px;
+ }
+ 
+ .pin-rightup {
+     height: 8px;
+     width: 8px;
+     border-radius: 50%;
+     background-color: gray;
+     position: absolute;
+     right: 3px;
+     top: 3px;
+ }
+ 
+ .pin-leftbottom {
+     height: 8px;
+     width: 8px;
+     border-radius: 50%;
+     background-color: gray;
+     position: absolute;
+     left: 3px;
+     bottom: 3px;
+ }
+ 
+ .pin-rightbottom {
+     height: 8px;
+     width: 8px;
+     border-radius: 50%;
+     background-color: gray;
+     position: absolute;
+     right: 3px;
+     bottom: 3px;
+ }
+ 
